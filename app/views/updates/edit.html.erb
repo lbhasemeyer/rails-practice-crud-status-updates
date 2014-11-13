@@ -1,0 +1,16 @@
+<%= form_for @update do |t| %>
+
+Status:
+<%= t.text_field :status %>
+<br>
+User:
+<%= t.text_field :user %>
+<br>
+Likes:
+<%= t.number_field :likes %>
+<br>
+<%= t.submit %>
+
+<%= link_to "Delete", @update, method: :delete %>
+
+<% end %>

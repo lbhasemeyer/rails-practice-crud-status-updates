@@ -1,0 +1,14 @@
+<%= notice %>
+
+
+<h1><%= @update.status %></h1>
+<br>
+User:
+<%= @update.user %>
+<br>
+Likes:
+<%= @update.likes %>
+<br>
+<%= link_to "See All Updates", root_path %>
+<br>
+<%= link_to "Edit", edit_update_path(@update) %>

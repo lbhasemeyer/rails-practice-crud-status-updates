@@ -1,0 +1,20 @@
+<% if @update.errors.any? %>
+  <% @update.errors.full_messages.each do |message| %>
+    <%= message %>
+  <% end %>
+<% end %>
+
+<%= form_for @update do |t| %>
+
+Status:
+<%= t.text_field :status %>
+<br>
+User:
+<%= t.text_field :user %>
+<br>
+Likes:
+<%= t.number_field :likes %>
+<br>
+<%= t.submit %>
+
+<% end %>
