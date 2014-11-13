@@ -11,6 +11,7 @@ require 'rails_helper'
       expect(page).to have_content("Status can't be blank")
       expect(page).to have_content("User can't be blank")
       expect(page).to have_content("Likes can't be blank")
+
       fill_in "Status", with: "Kittens! So soft and wonderful!"
       fill_in "User", with: "catlovr1944"
       fill_in "Likes", with: "1000001"
