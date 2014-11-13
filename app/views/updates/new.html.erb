@@ -6,13 +6,13 @@
 
 <%= form_for @update do |t| %>
 
-Status:
+<%= t.label :status %>
 <%= t.text_field :status %>
 <br>
-User:
+<%= t.label :user %>
 <%= t.text_field :user %>
 <br>
-Likes:
+<%= t.label :likes %>
 <%= t.number_field :likes %>
 <br>
 <%= t.submit %>
