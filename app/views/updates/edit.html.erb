@@ -1,16 +1,16 @@
-<%= form_for @update do |t| %>
+<%= form_for @update do |f| %>
 
 Status:
-<%= t.text_field :status %>
+<%= f.text_field :status %>
 <br>
 User:
-<%= t.text_field :user %>
+<%= f.text_field :user %>
 <br>
 Likes:
-<%= t.number_field :likes %>
+<%= f.number_field :likes %>
 <br>
-<%= t.submit %>
+<%= f.submit %>
 
-<%= link_to "Delete", @update, method: :delete %>
+<%= link_to "Delete", @update, method: :delete, data: { confirm: 'Are you sure you want to delete this?'} %>
 
 <% end %>
